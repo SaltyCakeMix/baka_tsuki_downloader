@@ -15,6 +15,9 @@ output = 'output'
 idealImageWidth = 1200
 maxImageDLWidth = 1920
 
+if not os.path.exists(output):
+    os.mkdir(output)
+
 for volume in volumes:
     # Page loading
     filePath = f'{title} - Volume {volume}'
